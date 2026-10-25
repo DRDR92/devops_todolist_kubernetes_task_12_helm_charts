@@ -56,6 +56,6 @@ curl http://localhost/
 Change any value (for example `hpa.maxReplicas`) and apply:
 
 ```bash
-helm upgrade todoapp ./helm-chart/todoapp --set hpa.maxReplicas=7
+helm upgrade todoapp ./.infrastructure/helm-chart/todoapp --set hpa.maxReplicas=7
 kubectl get hpa -n todoapp
 ```
